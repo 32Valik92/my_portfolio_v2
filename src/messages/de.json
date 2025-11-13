@@ -1,0 +1,123 @@
+{
+	"header": {
+		"portfolio": "Portfolio",
+		"pricing": "Preise",
+		"reviews": "Bewertungen",
+		"contacts": "Kontakte",
+		"name": "Valentyna Boichenko",
+		"locale": {
+			"ua": "Українська",
+			"ru": "Русский",
+			"en": "English",
+			"de": "Deutsch"
+		},
+		"phoneRaw": "+436764488436",
+		"phoneHuman": "+43 676 4488436"
+	},
+
+	"hero": {
+		"headline": "Fotografin",
+		"top_left": "Aus flüchtigen Augenblicken wird zeitlose Kunst",
+		"left": "Ich helfe Ihnen gerne, jede Ihrer Ideen zum Leben zu erwecken",
+		"right": "Originelle Fotoshootings, stilisierte Aufnahmen und Themenprojekte.",
+		"imagealt": "Atmosphärisches Studioshooting"
+	},
+
+	"about": {
+		"title": "Von Der Idee Zum Foto",
+		"paragraph1": "Mein Name ist Valentyna, und die Fotografie begleitet mich, solange ich denken kann. Was einst als kindliche Faszination begann, vergängliche Augenblicke festzuhalten, ist zu meiner größten Leidenschaft und meinem Beruf geworden.",
+		"paragraph2": "Mein Weg führte mich durch verschiedene Länder und Kulturen: von meinen Wurzeln in der Ukraine über Jahre des Lebens und Arbeitens in Kanada bis zu meiner heutigen Heimat in Österreich. Jeder Ort hat meinen Blick geprägt und mir neue Wege eröffnet, die Schönheit von Menschen und ihren Geschichten zu sehen.",
+		"paragraph3": "Als Fotografin erschaffe ich Aufnahmen, die zeitlos sind — erfüllt von Liebe, Emotion und Echtheit. Ob ein stilles Porträt, eine fröhliche Familiensession, eine romantische Liebesgeschichte oder ein Hochzeitstag voller Zauber — mein Ziel ist immer dasselbe: Momente einzufangen, die für immer bleiben.",
+		"paragraph4": "Mit vielen Jahren Erfahrung und unzähligen Fotoshootings bringe ich nicht nur technisches Können mit, sondern auch Sensibilität, Neugier und ein geschultes Auge fürs Detail. Fotografie bedeutet für mich weit mehr als ein Bild: Es ist eine Erinnerung, eine Stimmung, ein Gefühl, zu dem man immer wieder zurückkehren möchte."
+	},
+
+	"price": {
+		"title": "Preise",
+		"cta": "Fotoshooting buchen",
+
+		"family": {
+			"title": "Familienshooting",
+			"subtitle": "60+ bearbeitete Fotos",
+			"h1": "1 Stunde — ",
+			"h2": "2 Stunden — ",
+			"h3": "3 Stunden — "
+		},
+		"couple": {
+			"title": "Paar / Love Story",
+			"subtitle": "60+ bearbeitete Fotos",
+			"h1": "1 Stunde — ",
+			"h2": "2 Stunden — ",
+			"h3": "3 Stunden — "
+		},
+		"portrait": {
+			"title": "Portraitshooting (Solo)",
+			"subtitle": "50+ bearbeitete Fotos",
+			"h1": "1 Stunde — ",
+			"h2": "2 Stunden — ",
+			"h3": "3 Stunden — "
+		},
+		"wedding": {
+			"title": "Hochzeitsfotografie",
+			"subtitle": "",
+			"h1": "4 Stunden — ",
+			"h1_subtitle": "(200–250 Fotos)",
+			"h2": "8 Stunden — ",
+			"h2_subtitle": "(400–500 Fotos)",
+			"h3": "12 Stunden — ",
+			"h3_subtitle": "(bis zu 600 Fotos)",
+			"h4": "14 Stunden — ",
+			"h4_subtitle": "(bis zu 700 Fotos)"
+		},
+
+		"includes_title": "Alle Pakete beinhalten",
+		"includes_1": "Persönliche Beratung & Standortplanung",
+		"includes_2": "Hilfe bei Outfit-Styling und Posing",
+		"includes_3": "Bearbeitete hochauflösende Bilder",
+		"includes_4": "Private Online-Galerie",
+		"includes_5": "Lieferung innerhalb von 10 Tagen",
+		"includes_6": "Verfügbar für Shootings in anderen Städten oder Ländern auf Anfrage"
+
+	},
+
+
+	"reviews": {
+		"title": "Bewertungen",
+		"prev": "Zurück",
+		"next": "Weiter",
+		"powered": "Finden Sie uns auf Google",
+		"empty": "Noch keine Bewertungen",
+		"showMore": "Mehr anzeigen",
+		"showLess": "Weniger anzeigen"
+	},
+
+	"contact": {
+		"title": "Kontaktieren Sie Mich",
+		"email": "E-Mail *",
+		"lastname": "Nachname",
+		"firstname": "Vorname *",
+		"message": "Nachricht",
+		"send": "Senden",
+		"sending": "Wird gesendet...",
+		"success": "Nachricht erfolgreich gesendet ✅",
+		"error": "Ein Fehler ist aufgetreten ❌"
+	},
+
+	"footer": {
+		"name": "Valentyna Boichenko",
+		"portfolio": "Portfolio",
+		"pricing": "Preise",
+		"reviews": "Bewertungen",
+		"contacts": "Kontakte",
+		"location": "Wien und die Region Wien. Ebenfalls verfügbar in Bratislava, Budapest und Prag",
+		"phoneRaw": "+436764488436",
+		"phoneHuman": "+43 676 4488436",
+
+		"vkurl": "",
+		"tgurl": "",
+		"waurl": "",
+		"igurl": ""
+	},
+	"common": {
+		"learnMore": "Mehr erfahren"
+	}
+}

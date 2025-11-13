@@ -1,0 +1,122 @@
+{
+	"header": {
+		"portfolio": "Portfolio",
+		"pricing": "Pricing",
+		"reviews": "Reviews",
+		"contacts": "Contacts",
+		"name": "Valentyna Boichenko",
+		"locale": {
+			"ua": "Українська",
+			"ru": "Русский",
+			"en": "English",
+			"de": "Deutsch"
+		},
+		"phoneRaw": "+436764488436",
+		"phoneHuman": "+43 676 4488436"
+	},
+
+	"hero": {
+		"headline": "Photographer",
+		"top_left": "Turning fleeting moments into timeless art",
+		"left": "I will be happy to bring any of your ideas to life",
+		"right": "Original photo sessions, styled shoots, and themed projects.",
+		"imagealt": "Atmospheric studio shoot"
+	},
+
+	"about": {
+		"title": "From Idea To Shot",
+		"paragraph1": "My name is Valentyna, and photography has been part of my life for as long as I can remember. What once started as a childhood fascination with capturing fleeting moments has grown into my greatest passion and profession.",
+		"paragraph2": "Over the years, my journey has taken me through different countries and cultures — from my roots in Ukraine, to living and working in Canada, and now settling in Austria. Each place has shaped my vision and allowed me to see the beauty of people and their stories in unique ways.",
+		"paragraph3": "As a professional photographer, I specialize in creating timeless images filled with love, emotion, and authenticity. Whether it’s a quiet portrait, a joyful family session, a romantic love story, or a wedding day full of magic — my goal is always the same: to capture moments that will stay with you forever.",
+		"paragraph4": "With years of experience and countless photoshoots behind me, I bring not just technical skills, but also sensitivity, curiosity, and an eye for detail. For me, photography is not only about pictures — it’s about creating a memory, an atmosphere, and a feeling you can return to any time you look at your photos."
+	},
+
+	"price": {
+		"title": "Pricing",
+		"cta": "Book a Session",
+
+		"family": {
+			"title": "Family Session",
+			"subtitle": "60+ edited photos",
+			"h1": "1 hour — ",
+			"h2": "2 hours — ",
+			"h3": "3 hours — "
+		},
+		"couple": {
+			"title": "Couple / Love Story",
+			"subtitle": "60+ edited photos",
+			"h1": "1 hour — ",
+			"h2": "2 hours — ",
+			"h3": "3 hours — "
+		},
+		"portrait": {
+			"title": "Portrait Session (Solo)",
+			"subtitle": "50+ edited photos",
+			"h1": "1 hour — ",
+			"h2": "2 hours — ",
+			"h3": "3 hours — "
+		},
+		"wedding": {
+			"title": "Wedding Photography",
+			"subtitle": "",
+			"h1": "4 hours — ",
+			"h1_subtitle": "(200–250 photos)",
+			"h2": "8 hours — ",
+			"h2_subtitle": "(400–500 photos)",
+			"h3": "12 hours — ",
+			"h3_subtitle": "(up to 600 photos)",
+			"h4": "14 hours — ",
+			"h4_subtitle": "(up to 700 photos)"
+		},
+
+		"includes_title": "All packages include",
+		"includes_1": "Personal consultation & location planning",
+		"includes_2": "Assistance with outfit styling and posing",
+		"includes_3": "Edited high-resolution images",
+		"includes_4": "Private online gallery",
+		"includes_5": "Delivery within 10 days",
+		"includes_6": "Available for shoots in other cities or countries upon request"
+	},
+
+
+	"reviews": {
+		"title": "Reviews",
+		"prev": "Previous",
+		"next": "Next",
+		"powered": "See us on Google",
+		"empty": "No reviews yet",
+		"showMore": "Show more",
+		"showLess": "Show less"
+	},
+
+	"contact": {
+		"title": "Contact Me",
+		"email": "Email *",
+		"lastname": "Last Name",
+		"firstname": "First Name *",
+		"message": "Message",
+		"send": "Send",
+		"sending": "Sending...",
+		"success": "Message sent successfully ✅",
+		"error": "Something went wrong ❌"
+	},
+
+	"footer": {
+		"name": "Valentyna Boichenko",
+		"portfolio": "Portfolio",
+		"pricing": "Pricing",
+		"reviews": "Reviews",
+		"contacts": "Contacts",
+		"location": "Vienna and the Vienna region. Also available in Bratislava, Budapest and Prague",
+		"phoneRaw": "+436764488436",
+		"phoneHuman": "+43 676 4488436",
+
+		"vkurl": "",
+		"tgurl": "",
+		"waurl": "",
+		"igurl": ""
+	},
+	"common": {
+		"learnMore": "Learn more"
+	}
+}
