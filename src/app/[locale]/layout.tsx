@@ -1,4 +1,3 @@
-// √
 import "./globals.css";
 
 import { notFound } from "next/navigation";
@@ -7,7 +6,6 @@ import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 
 import Header from "@/components/common/Header";
-
 
 type Props = {
     children?: ReactNode;

@@ -5,5 +5,11 @@
     "skills": "Навички",
     "projects": "Проекти",
     "contact": "Зв’язатись"
+  },
+
+  "home": {
+    "label": "Вітаємо",
+    "title": "VALENTYN STRUKALO",
+    "description": "Frontend розробник з досвідом в React, Next.js і Tailwind CSS."
   }
 }
