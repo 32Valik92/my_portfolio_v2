@@ -8,8 +8,10 @@
   },
 
   "home": {
-    "label": "Вітаємо",
-    "title": "VALENTYN STRUKALO",
-    "description": "Frontend розробник з досвідом в React, Next.js і Tailwind CSS."
+    "hero": {
+      "photoAlt": "Валентин Струкало — фронтенд розробник",
+      "tagName": "#ВАЛЕНТИН_СТРУКАЛО",
+      "tagRole": "#FRONTEND_РОЗРОБНИК"
+    }
   }
 }

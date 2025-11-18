@@ -16,7 +16,7 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
     
   return (
-    <header className="w-full flex justify-center bg-[var(--main-back)]">
+    <header className="w-full flex justify-center bg-[var(--main-back)] h-auto md:h-[90px]">
       <div className="relative w-full max-w-[1400px] flex items-center justify-between px-[16px] py-[16px]">
         <div className="flex flex-col leading-[23px]">
           <span className="text-[28px] font-semibold text-[var(--white)] tracking-[1px]">
