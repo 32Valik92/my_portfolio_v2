@@ -8,10 +8,13 @@ import { ReactNode } from "react";
 import Header from "@/components/common/Header";
 
 type Props = {
-    children?: ReactNode;
-    params: {locale: string}
+	children?: ReactNode;
+	params: Promise<{ locale: string }>;
 }
-export default async function RootLayout({ children, params: { locale } } : Props){
+export default async function RootLayout({ children, params }: Props) {
+
+  const { locale } = await params;
+
   let messages;
 
   try {
@@ -20,13 +23,13 @@ export default async function RootLayout({ children, params: { locale } } : Prop
     console.log(error);
     notFound();
   }
-    
-  return(
+
+  return (
     <html lang={locale}>
       <body className="min-h-[100vh] bg-[var(--main-back)] text-[var(--white)]">
         <NextIntlClientProvider locale={locale} messages={messages}>
 
-          <Header />
+          <Header/>
 
           <main className="w-full flex flex-col items-center">
             {children}

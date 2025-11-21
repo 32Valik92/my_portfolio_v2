@@ -19,25 +19,11 @@
         "projects": "Проекти"
       },
       "leftColumnTitle": "Тут заголовок з представленням",
-      "leftColumnDescription": {
-        "0": "Я — фронтенд-розробник з більш ніж 2 роками досвіду. Спеціалізуюсь на створенні складних користувацьких інтерфейсів з підтримкою SEO та багатомовності.",
-        "1": "Мені подобається розв’язувати нестандартні задачі, де можна задіяти логіку, математику та критичне мислення.",
-        "2": "Люблю працювати над масштабованими рішеннями, які легко перевикористовувати в майбутньому."
-      },
-      "contact": {
-        "title": "КОНТАКТИ",
-        "phone": "+380990577835",
-        "email": "strukalo.valentyn@gmail.com",
-        "location": "Київ",
-        "linkedin": "valentyn-strukalo",
-        "portfolio": "Портфоліо"
-      },
-      "language": {
-        "title": "МОВИ",
-        "english": "English",
-        "ukrainian": "Українська",
-        "polish": "Polish"
-      },
+      "leftColumnDescription": [
+        "Я — фронтенд-розробник з більш ніж 2 роками досвіду. Спеціалізуюсь на створенні складних користувацьких інтерфейсів з підтримкою SEO та багатомовності.",
+        "Мені подобається розв’язувати нестандартні задачі, де можна задіяти логіку, математику та критичне мислення.",
+        "Люблю працювати над масштабованими рішеннями, які легко перевикористовувати в майбутньому."
+      ],
       "education": {
         "title": "Освіта",
         "items": [
@@ -72,53 +58,7 @@
             "Currently working as a Frontend Developer in a product company. I build SEO-optimized, multilingual websites using Next.js with TypeScript, React.js, and Vite, collaborating closely with the team and managing version control to ensure smooth development workflows.",
             "I take part in creating projects with different microservices and have also developed branded websites for partner companies on request."
           ]
-        },
-        "past": [
-          {
-            "period": "Січень 2022 - Лютий 2023",
-            "position": "Mathematics teacher",
-            "company": "Bukischool, Kyiv",
-            "description": [
-              "Assessed student work and academic progress.",
-              "Maintained student focus through behavior strategies and motivation.",
-              "Collaborated with parents and staff to improve learning outcomes."
-            ]
-          },
-          {
-            "period": "Листопад 2023 – Серпень 2024",
-            "position": "Junior Front-end Developer",
-            "company": "FixIQ Pro",
-            "description": [
-              "Worked as a Junior Frontend Developer, building dynamic web pages with JavaScript and jQuery — including an admin panel for the company and interactive data tables.",
-              "Collaborated closely with QA to ensure usability, responsiveness, and standards compliance.",
-              "Took part in code reviews and sprint planning, which strengthened my teamwork, communication, and problem-solving skills."
-            ]
-          }
-        ]
-      },
-      "skills": {
-        "title": "НАВИЧКИ",
-        "frontend": [
-          "React.js",
-          "JavaScript",
-          "TypeScript",
-          "Next.js",
-          "Redux Toolkit",
-          "CSS",
-          "HTML",
-          "JQuery"
-        ],
-        "backend": [
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "MySQL"
-        ],
-        "tools": [
-          "Git",
-          "GitHub",
-          "Linux"
-        ]
+        }
       }
     }
   }

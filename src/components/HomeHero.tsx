@@ -244,10 +244,10 @@ const HomeHero = () => {
   }, []); // Пустий масив залежностей: Виконується тільки при монтуванні.
 
   return (
-    <div className="w-full h-auto lg:h-[calc(100vh-90px)] py-[30px] flex flex-col lg:flex-row items-center gap-[40px] text-[var(--white)]">
+    <div className="relative w-full h-auto lg:h-[calc(100vh-90px)] py-[30px] flex flex-col lg:flex-row items-center gap-[40px] text-[var(--white)]">
       {/* ЛІВА СТОРОНА */}
       <div className="w-full md:w-[50%] flex flex-col items-center md:items-start gap-[20px] md:gap-[48px]">
-        <div className="relative w-full max-w-[360px] md:max-w-none mx-auto">
+        <div className="relative w-full max-w-[360px] md:max-w-[500px] mx-auto">
           <Image src="/images/hero/hero_me.png" alt={t("photoAlt")} width={725} height={749} className="w-full h-auto object-contain" priority />
         </div>
         <div className="w-full flex flex-col text-center md:text-right font-semibold text-[16px] md:text-[35px] gap-[6px] md:gap-[10px] tracking-[1px] uppercase">
