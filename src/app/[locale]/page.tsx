@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Section from "@/components/common/Section";
 import HomeHero from "@/components/HomeHero";
+import AboutSection from "@/components/sections/about/AboutSection";
 
 export default function HomePage(){
   return (
@@ -16,6 +17,10 @@ export default function HomePage(){
 
       <Section id="hero">
         <HomeHero />
+      </Section>
+
+      <Section id="about-section">
+        <AboutSection />
       </Section>
     </div>
   );
