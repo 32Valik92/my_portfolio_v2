@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 type Props = {
 	activeTab: "about" | "skills" | "projects";
-	setActiveTab: (tab: "about" | "skills" | "projects") => void;
+	setActiveTab: (_tab: "about" | "skills" | "projects") => void;
 };
 
 const TabsNavigation = ({ activeTab, setActiveTab }: Props) => {
