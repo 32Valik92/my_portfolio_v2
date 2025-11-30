@@ -1,86 +1,118 @@
 {
-  "header": {
-    "home": "Головна",
-    "about": "Про мене",
-    "skills": "Навички",
-    "projects": "Проекти",
-    "contact": "Зв’язатись"
-  },
-  "home": {
-    "hero": {
-      "photoAlt": "Валентин Струкало — фронтенд розробник",
-      "tagName": "#ВАЛЕНТИН_СТРУКАЛО",
-      "tagRole": "#FRONTEND_РОЗРОБНИК"
-    },
-    "about": {
-      "tabs": {
-        "about": "Про мене",
-        "skills": "Навички",
-        "projects": "Проекти"
-      },
-      "leftColumnTitle": "Фронтенд-розробник з досвідом понад 2 роки",
-      "leftColumnDescription": [
-        "Я — фронтенд-розробник з більш ніж 2 роками комерційного досвіду. Спеціалізуюсь на створенні сучасних, продуктивних та SEO-оптимізованих інтерфейсів з підтримкою багатомовності.",
-        "Мені подобається розв’язувати нетипові задачі, де можна застосувати логіку, математику та критичне мислення. Працюю з технологіями React.js, Next.js, TypeScript, MongoDB, MySQL, Git та іншими.",
-        "Прагну створювати масштабовані рішення, які легко підтримувати та перевикористовувати в майбутньому. Взаємодію з командою, беру участь у проєктуванні архітектури та оптимізації процесів розробки."
-      ],
-      "education": {
-        "title": "Освіта",
-        "items": [
-          {
-            "period": "2020 – 2024",
-            "degree": "Бакалавр",
-            "institution": "Національний технічний університет України «КПІ ім. Ігоря Сікорського»",
-            "specialization": "Кібербезпека"
-          },
-          {
-            "period": "2024 – 2026",
-            "degree": "Магістр",
-            "institution": "Херсонський державний університет",
-            "specialization": "Інженерія програмного забезпечення"
-          }
-        ]
-      },
+	"header": {
+		"home": "Головна",
+		"about": "Про мене",
+		"skills": "Навички",
+		"projects": "Проекти",
+		"contact": "Зв’язатись"
+	},
+	"home": {
+		"hero": {
+			"photoAlt": "Валентин Струкало — фронтенд розробник",
+			"tagName": "#ВАЛЕНТИН_СТРУКАЛО",
+			"tagRole": "#FRONTEND_РОЗРОБНИК"
+		},
+		"about": {
+			"tabs": {
+				"about": "Про мене",
+				"skills": "Навички",
+				"projects": "Проекти"
+			},
+			"leftColumnTitle": "Фронтенд-розробник з досвідом понад 2 роки",
+			"leftColumnDescription": [
+				"Я — фронтенд-розробник з більш ніж 2 роками комерційного досвіду. Спеціалізуюсь на створенні сучасних, продуктивних та SEO-оптимізованих інтерфейсів з підтримкою багатомовності.",
+				"Мені подобається розв’язувати нетипові задачі, де можна застосувати логіку, математику та критичне мислення. Працюю з технологіями React.js, Next.js, TypeScript, MongoDB, MySQL, Git та іншими.",
+				"Прагну створювати масштабовані рішення, які легко підтримувати та перевикористовувати в майбутньому. Взаємодію з командою, беру участь у проєктуванні архітектури та оптимізації процесів розробки."
+			],
+			"education": {
+				"title": "Освіта",
+				"items": [
+					{
+						"period": "2020 – 2024",
+						"degree": "Бакалавр",
+						"institution": "Національний технічний університет України «КПІ ім. Ігоря Сікорського»",
+						"specialization": "Кібербезпека"
+					},
+					{
+						"period": "2024 – 2026",
+						"degree": "Магістр",
+						"institution": "Херсонський державний університет",
+						"specialization": "Інженерія програмного забезпечення"
+					}
+				]
+			},
+			"experience": {
+				"title": "Останнє місце роботи",
+				"active": "лютий 2024 - березень 2025",
+				"current": {
+					"period": "Листопад 2024 – зараз",
+					"position": "Frontend Developer",
+					"type": "Full-time",
+					"company": "Pixoram",
+					"description": [
+						"Працюю Frontend Developer у продуктовій компанії, де створюю багатомовні, SEO-оптимізовані вебсайти на базі Next.js, TypeScript, React.js і Vite.",
+						"Тісно співпрацюю з командою, відповідаю за контроль версій та забезпечення стабільності процесів розробки.",
+						"Беру участь у створенні проєктів із використанням різних мікросервісів, а також розробляю брендовані сайти для партнерських компаній на запит."
+					]
+				}
+			},
+			"skills": {
+				"titleBold": "Skills",
+				"titleRest": "and tools",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus non tincidunt semper. Nunc et luctus dolor.",
+				"items": [
+					"CSS",
+					"React",
+					"Node.js",
+					"MySQL",
+					"MongoDB",
+					"Redux Toolkit",
+					"Linux",
+					"HTML",
+					"GitHub",
+					"JQuery",
+					"JavaScript",
+					"Git",
+					"Express",
+					"TypeScript",
+					"Next.js"
+				]
+			},
 
-      "experience": {
-        "title": "Останнє місце роботи",
-        "active": "лютий 2024 - березень 2025",
-        "current": {
-          "period": "Листопад 2024 – зараз",
-          "position": "Frontend Developer",
-          "type": "Full-time",
-          "company": "Pixoram",
-          "description": [
-            "Працюю Frontend Developer у продуктовій компанії, де створюю багатомовні, SEO-оптимізовані вебсайти на базі Next.js, TypeScript, React.js і Vite.",
-            "Тісно співпрацюю з командою, відповідаю за контроль версій та забезпечення стабільності процесів розробки.",
-            "Беру участь у створенні проєктів із використанням різних мікросервісів, а також розробляю брендовані сайти для партнерських компаній на запит."
-          ]
-
-        }
-      },
-
-      "skills": {
-        "titleBold": "Skills",
-        "titleRest": "and tools",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus non tincidunt semper. Nunc et luctus dolor.",
-        "items": [
-          "CSS",
-          "React",
-          "Node.js",
-          "MySQL",
-          "MongoDB",
-          "Redux Toolkit",
-          "Linux",
-          "HTML",
-          "GitHub",
-          "JQuery",
-          "JavaScript",
-          "Git",
-          "Express",
-          "TypeScript",
-          "Next.js"
-        ]
-      }
-    }
-  }
+			"projects": {
+				"modal": {
+					"techStackLabel": "Технології",
+					"buttonLabel": "Перейти до проєкту",
+					"closeLabel": "Закрити"
+				},
+				"items": [
+					{
+						"slug": "project-1",
+						"title": "Words API Form",
+						"shortDescription": "Форма для роботи з Words API із пошуком синонімів, антонімів та інших даних.",
+						"description": "Односторінковий застосунок, який використовує зовнішній Words API для пошуку значень, синонімів, антонімів та пов’язаних слів. Реалізована зручна форма з валідацією, різними режимами пошуку та чистим інтерфейсом.",
+						"techStack": "React, TypeScript, REST API, CSS Modules",
+						"link": "https://example.com/project-1"
+					},
+					{
+						"slug": "project-2",
+						"title": "Movie WebSite by MovieDB",
+						"shortDescription": "Кіносайт з пошуком фільмів, рейтингами та деталями на базі MovieDB.",
+						"description": "Фронтенд-додаток для перегляду популярних фільмів, пошуку за назвою та перегляду детальної інформації. Підтримує пагінацію, фільтрацію та адаптивний інтерфейс для різних розмірів екрана.",
+						"techStack": "React, TypeScript, TMDB API, Styled Components",
+						"link": "https://example.com/project-2"
+					},
+					{
+						"slug": "project-3",
+						"title": "Quiz / Game Dashboard",
+						"shortDescription": "Панель з інтерактивними квізами та статистикою для користувачів.",
+						"description": "Система з кількома ігровими режимами та модулем статистики. Дозволяє проходити квізи, переглядати результати та прогрес. Інтерфейс побудований з акцентом на швидкість та зрозумілу взаємодію.",
+						"techStack": "React, Next.js, TypeScript, Node.js",
+						"link": "https://example.com/project-3"
+					}
+				],
+				"no_items": "Наразі немає проєктів"
+			}
+		}
+	}
 }
