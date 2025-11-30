@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { EducationItem } from "@/types";
@@ -15,7 +16,7 @@ const AboutTab = () => {
     : [];
 	
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-[60px] lg:gap-[40px]">
+    <div className="w-full flex flex-col lg:flex-row gap-[60px] lg:gap-[20px]">
       <div className="flex-2 flex flex-col gap-[60px] pr-0 md:pr-[20px] pb-[20px] md:pb-0">
 
         <div className="flex flex-col gap-[32px]">
@@ -37,31 +38,43 @@ const AboutTab = () => {
             <div key={index}
 							     className="bg-[var(--white)] rounded-[20px] px-[15px] py-[13px] flex flex-col gap-[8px] text-[var(--main-back)]">
               <div className="flex justify-between items-center text-[15px]">
-                <span>{item.period}</span>
-                <span className="font-bold text-[16px]">{item.degree}</span>
+                <span className="px-[15px] py-[5px] text-[20px] rounded-[15px] bg-[var(--gray-3)] text-white">{item.period}</span>
+                <span className="text-[16px]">{item.degree}</span>
               </div>
-              <div className="font-semibold text-[18px]">{item.institution}</div>
-              <div className="text-[14px]">{item.specialization}</div>
+              <div className="text-[14px]">{item.institution}</div>
+              <div className="font-semibold text-[18px]">{item.specialization}</div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="flex-1 flex flex-col gap-[60px] pl-0 md:pl-[20px] pt-[20px] md:pt-0">
+      <div className="flex-1 flex flex-col gap-[60px] pt-[20px] md:pt-0">
         <div>
-          <h3 className="text-[24px] font-bold mb-[24px] text-white">{t("experience.title")}</h3>
+          <h3 className="text-[40px] font-bold mb-[24px] leading-[1.1] text-white">{t("experience.title")}</h3>
           <div className="space-y-[20px]">
-            <div className="bg-white/10 backdrop-blur-sm rounded-[24px] px-[20px] py-[20px] border border-white/10">
-              <div className="flex justify-between items-center mb-[16px]">
-                <div className="text-[15px] text-[#A7A7A7]">{t("experience.current.period")}</div>
-                <div className="bg-[#E85002]/20 text-[#E85002] text-[13px] px-[12px] py-[4px] rounded-full">
-									Активна позиція
+            <div className="w-full">
+              <div className="flex justify-between items-center mb-[16px] w-full gap-[10px]">
+                <div className="">
+                  <Image
+                    src="/images/about/last_logo.png"
+                    alt="last_logo"
+                    width={200}
+                    height={106}
+                    className="max-w-[135px]"
+                  />
+                </div>
+                <div className="border-l-[1px] border-b-[1px] border-[var(--white)] px-[10px] font-semibold text-center">
+                  {t("experience.active")}
                 </div>
               </div>
-              <div className="text-[20px] font-bold mb-[4px] text-white">{t("experience.current.position")}</div>
-              <div
-                className="text-[16px] text-[#E85002] mb-[16px]">{t("experience.current.type")} · {t("experience.current.company")}</div>
-              <ul className="space-y-[8px] text-[15px] text-[#A7A7A7] list-disc pl-[20px]">
+              <div className="text-[20px] font-bold mb-[4px] text-white flex flex-col">
+                <span>{t("experience.current.position")}</span>
+                <span className="text-[15px] text-[var(--gray-4)] font-semibold">
+                  {t("experience.current.type")} · {t("experience.current.company")}
+                </span>
+              </div>
+
+              <ul className="space-y-[8px] text-[20px] text-[var(--white)] list-disc pl-[20px]">
                 {t.raw("experience.current.description").map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
