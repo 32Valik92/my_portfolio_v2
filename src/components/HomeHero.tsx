@@ -262,7 +262,7 @@ const HomeHero = () => {
           className="relative w-full max-w-[680px] md:max-w-none h-[700px] lg:h-full bg-[var(--main-first)] rounded-[25px] md:rounded-[35px] overflow-hidden pt-[20px] pl-[20px] md:pt-[30px] md:pl-[30px]"
         >
           {/* Статичний текстовий оверлей (наприклад, "20 25" — можливо, рік або код). */}
-          <div className="text-white font-extrabold text-[80px] md:text-[100px] leading-[75px]">
+          <div className="text-[var(--white)] font-extrabold text-[80px] md:text-[100px] leading-[75px]">
             <div>20</div>
             <div>25</div>
           </div>

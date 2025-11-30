@@ -18,11 +18,11 @@
         "skills": "Навички",
         "projects": "Проекти"
       },
-      "leftColumnTitle": "Тут заголовок з представленням",
+      "leftColumnTitle": "Фронтенд-розробник з досвідом понад 2 роки",
       "leftColumnDescription": [
-        "Я — фронтенд-розробник з більш ніж 2 роками досвіду. Спеціалізуюсь на створенні складних користувацьких інтерфейсів з підтримкою SEO та багатомовності.",
-        "Мені подобається розв’язувати нестандартні задачі, де можна задіяти логіку, математику та критичне мислення.",
-        "Люблю працювати над масштабованими рішеннями, які легко перевикористовувати в майбутньому."
+        "Я — фронтенд-розробник з більш ніж 2 роками комерційного досвіду. Спеціалізуюсь на створенні сучасних, продуктивних та SEO-оптимізованих інтерфейсів з підтримкою багатомовності.",
+        "Мені подобається розв’язувати нетипові задачі, де можна застосувати логіку, математику та критичне мислення. Працюю з технологіями React.js, Next.js, TypeScript, MongoDB, MySQL, Git та іншими.",
+        "Прагну створювати масштабовані рішення, які легко підтримувати та перевикористовувати в майбутньому. Взаємодію з командою, беру участь у проєктуванні архітектури та оптимізації процесів розробки."
       ],
       "education": {
         "title": "Освіта",
@@ -38,15 +38,10 @@
             "degree": "Магістр",
             "institution": "Херсонський державний університет",
             "specialization": "Інженерія програмного забезпечення"
-          },
-          {
-            "period": "2024",
-            "degree": "Курси",
-            "institution": "Навчальний заклад",
-            "specialization": "Назва курсу"
           }
         ]
       },
+
       "experience": {
         "title": "Останнє місце роботи",
         "active": "лютий 2024 - березень 2025",
@@ -56,10 +51,35 @@
           "type": "Full-time",
           "company": "Pixoram",
           "description": [
-            "Currently working as a Frontend Developer in a product company. I build SEO-optimized, multilingual websites using Next.js with TypeScript, React.js, and Vite, collaborating closely with the team and managing version control to ensure smooth development workflows.",
-            "I take part in creating projects with different microservices and have also developed branded websites for partner companies on request."
+            "Працюю Frontend Developer у продуктовій компанії, де створюю багатомовні, SEO-оптимізовані вебсайти на базі Next.js, TypeScript, React.js і Vite.",
+            "Тісно співпрацюю з командою, відповідаю за контроль версій та забезпечення стабільності процесів розробки.",
+            "Беру участь у створенні проєктів із використанням різних мікросервісів, а також розробляю брендовані сайти для партнерських компаній на запит."
           ]
+
         }
+      },
+
+      "skills": {
+        "titleBold": "Skills",
+        "titleRest": "and tools",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus non tincidunt semper. Nunc et luctus dolor.",
+        "items": [
+          "CSS",
+          "React",
+          "Node.js",
+          "MySQL",
+          "MongoDB",
+          "Redux Toolkit",
+          "Linux",
+          "HTML",
+          "GitHub",
+          "JQuery",
+          "JavaScript",
+          "Git",
+          "Express",
+          "TypeScript",
+          "Next.js"
+        ]
       }
     }
   }
