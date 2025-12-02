@@ -113,6 +113,25 @@
         ],
         "no_items": "Наразі немає проєктів"
       }
+    },
+
+    "start": {
+      "titleLine1": "LET'S",
+      "titleLine2": "START",
+      "photoAlt": "Валентин Струкало — фото для контакту",
+      "name": "Валентин Струкало",
+      "linkedin": {
+        "label": "valentyn_strukalo",
+        "url": "http://www.linkedin.com/in/valentyn-strukalo-07b747286"
+      },
+      "email": "strukalo.valentyn@gmail.com",
+      "whatsapp": "+380990577835",
+      "telegram": "@str_kl",
+      "telegram_url": "https://t.me/str_kl",
+      "github": {
+        "label": "valentyn-strukalo",
+        "url": "https://github.com/32Valik92"
+      }
     }
   }
 }
