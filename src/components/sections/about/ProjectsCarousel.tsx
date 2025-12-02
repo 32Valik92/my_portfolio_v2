@@ -109,7 +109,7 @@ const ProjectsCarousel = ({
                 {/* Card */}
                 <div
                   onClick={() => onProjectClick(project)}
-                  className={`group relative overflow-hidden rounded-[32px] bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
+                  className={`cursor-pointer group relative overflow-hidden rounded-[32px] bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
                     ${
               isActive
                 ? "w-[520px] h-[320px]"

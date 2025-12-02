@@ -9,12 +9,13 @@ import ProjectModal from "./ProjectModal";
 import ProjectsCarousel from "./ProjectsCarousel";
 
 const projectCardImages: Record<string, string> = {
-  "project-1": "/images/about/projects/placeholder.png",
-  "project-2": "/images/projects/project-2.png",
+  "portfolio_valentyna": "/images/projects/portfolio_valentyna.png",
+  "crm_for_json": "/images/projects/crm_for_json.png",
+  "movie_website": "/images/projects/movie_website.png",
+  "superheroes_fullstack": "/images/projects/superheroes_fullstack.png",
+  "words_api_form": "/images/projects/words_api_form.png",
+  "test_pxm_react_ts": "/images/projects/test_pxm_react_ts.png",
   "project-3": "/images/projects/project-3.png",
-  "project-4": "/images/projects/project-3.png",
-  "project-5": "/images/projects/project-3.png",
-  "project-6": "/images/projects/project-3.png",
 };
 
 const ProjectsTab = () => {
