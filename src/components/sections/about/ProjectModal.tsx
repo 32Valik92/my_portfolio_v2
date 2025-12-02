@@ -2,106 +2,144 @@
 
 import Image from "next/image";
 
+import { Link } from "@/i18n/navigation";
 import type { Project } from "@/types";
 
 type Props = {
 	project: Project | null;
 	onClose: () => void;
 	techStackLabel: string;
-	buttonLabel: string;
-	closeLabel: string;
 };
 
 const ProjectModal = ({
 	                      project,
 	                      onClose,
 	                      techStackLabel,
-	                      buttonLabel,
-	                      closeLabel,
 }: Props) => {
   if (!project) return null;
 
   return (
     <div
-      className="
-        fixed inset-0
-        bg-[rgba(0,0,0,0.6)]
-        flex items-center justify-center
-        z-[50]
-      "
+      className="fixed inset-0 z-[100] bg-[rgba(0,0,0,0.65)] backdrop-blur-[6px] overflow-y-auto flex sm:block md:flex md:items-center md:justify-center"
       onClick={onClose}
     >
       <div
-        className="
-          bg-[var(--gray-1)]
-          rounded-[24px]
-          max-w-[720px]
-          w-[90%]
-          max-h-[80vh]
-          overflow-y-auto
-          p-[24px]
-          text-[var(--white)]
-          relative
-        "
+        className="w-full sm:mt-[20px] md:mt-0 md:mb-0 px-[12px] sm:px-[16px] md:w-auto md:max-w-[920px]"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Кнопка закриття */}
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label={closeLabel}
-          className="
-            absolute right-[16px] top-[12px]
-            text-[20px]
-            text-[var(--white)]
-          "
+        <div
+          className="bg-[var(--white)] text-[var(--black)] rounded-[22px] overflow-hidden animate-fadeIn shadow-[inset_1px_4px_5.3px_0px_#00000040] max-h-[92vh] overflow-y-auto"
         >
-					✕
-        </button>
-
-        <h2 className="text-[24px] font-semibold mb-[12px]">
-          {project.title}
-        </h2>
-
-        <div className="w-full mb-[16px] rounded-[16px] overflow-hidden bg-[var(--gray-2)]">
-          <div className="relative w-full h-[260px]">
+          {/* HEADER */}
+          <div className="flex justify-end p-[15px]">
             <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              className="object-cover"
+              src="/images/about/projects/close.svg"
+              alt="close"
+              width={25}
+              height={24}
+              onClick={onClose}
+              className="w-[25px] h-[24px] cursor-pointer hover:scale-[1.05] transition-all duration-200"
             />
           </div>
+
+          {/* CONTENT */}
+          <div className="pt-[10px] px-[16px] pb-[30px] space-y-[35px]">
+
+            <div className="flex flex-col md:flex-row gap-[22px] p-[15px] shadow-[inset_1px_4px_5.3px_0px_#00000040] bg-[var(--gray-3)] rounded-[20px]">
+
+              {/* IMAGE */}
+              <div className="flex-1 rounded-[18px] overflow-hidden bg-[var(--gray-2)]">
+                <div className="relative w-full h-[240px] md:h-[100%] min-h-[260px]">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+
+              {/* RIGHT SIDE */}
+              <div className="flex flex-col gap-[12px] w-full md:w-[50%] justify-around">
+
+                {/* TITLE + LINKS */}
+                <div className="flex flex-col gap-[10px]">
+                  <h2
+                    className="font-semibold text-[28px] leading-[1] md:text-[40px]"
+                  >
+                    {project.title}
+                  </h2>
+
+                  {/* Links */}
+                  <div className="flex items-center gap-[14px] mt-[4px]">
+                    {project.link && (
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] hover:scale-[1.05] transition-all duration-200"
+                      >
+                        <Image
+                          src="/images/about/projects/link.svg"
+                          alt="link"
+                          width={50}
+                          height={50}
+                        />
+                      </Link>
+                    )}
+
+                    {project.github && (
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] hover:scale-[1.05] transition-all duration-200"
+                      >
+                        <Image
+                          src="/images/about/projects/git.svg"
+                          alt="github"
+                          width={50}
+                          height={50}
+                        />
+                      </Link>
+                    )}
+                  </div>
+                </div>
+
+                {/* TECH STACK */}
+                <div>
+                  <div className="text-[20px] md:text-[25px] uppercase font-semibold mb-[15px] md:mb-[20px]">
+                    {techStackLabel}
+                  </div>
+
+                  <div className="flex flex-wrap gap-[10px]">
+                    {project.techStack.map((item, i) => (
+                      <p
+                        key={i}
+                        className="bg-[var(--gray-1)] rounded-[18px] px-[10px] py-[3px] text-[16px] md:text-[20px] leading-[1] text-center hover:scale-[1.05] cursor-pointer transition-all duration-200"
+                      >
+                        {item}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* DESCRIPTION */}
+            <div className="space-y-[15px]">
+              {project.description.map((p, i) => (
+                <p
+                  key={i}
+                  className="text-[18px] md:text-[25px] text-[#000000] leading-[1.2]"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+
+          </div>
         </div>
-
-        <p className="text-[16px] leading-[24px] mb-[12px]">
-          {project.description}
-        </p>
-
-        <div className="text-[14px] leading-[20px] mb-[16px] text-[var(--gray-4)]">
-          {techStackLabel}: {project.techStack}
-        </div>
-
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className="
-              inline-flex items-center justify-center
-              px-[18px] py-[10px]
-              rounded-[999px]
-              bg-[var(--main-first)]
-              text-[14px]
-              font-semibold
-              text-[var(--white)]
-              hover:opacity-[0.9]
-              transition-all duration-200
-            "
-          >
-            {buttonLabel}
-          </a>
-        )}
       </div>
     </div>
   );

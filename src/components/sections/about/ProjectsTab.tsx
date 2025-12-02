@@ -61,8 +61,6 @@ const ProjectsTab = () => {
         project={selectedProject}
         onClose={handleCloseModal}
         techStackLabel={modalTexts.techStackLabel}
-        buttonLabel={modalTexts.buttonLabel}
-        closeLabel={modalTexts.closeLabel}
       />
     </div>
   );

@@ -85,32 +85,48 @@
 					"buttonLabel": "Перейти до проєкту",
 					"closeLabel": "Закрити"
 				},
+
 				"items": [
 					{
 						"slug": "project-1",
 						"title": "Words API Form",
 						"shortDescription": "Форма для роботи з Words API із пошуком синонімів, антонімів та інших даних.",
-						"description": "Односторінковий застосунок, який використовує зовнішній Words API для пошуку значень, синонімів, антонімів та пов’язаних слів. Реалізована зручна форма з валідацією, різними режимами пошуку та чистим інтерфейсом.",
-						"techStack": "React, TypeScript, REST API, CSS Modules",
-						"link": "https://example.com/project-1"
+						"description": [
+							"Цей проєкт — односторінковий застосунок, який взаємодіє з Words API для отримання значень, синонімів, антонімів та пов’язаних слів.",
+							"Містить зручну форму з вибором режиму пошуку, валідацією та адаптивним інтерфейсом."
+						],
+						"techStack": ["HTML", "Next.js", "Git", "TypeScript", "CSS", "WordsAPI", "NPM"],
+						"link": "https://example.com/project-1",
+						"github": "https://github.com/example/project-1"
 					},
+
 					{
 						"slug": "project-2",
 						"title": "Movie WebSite by MovieDB",
-						"shortDescription": "Кіносайт з пошуком фільмів, рейтингами та деталями на базі MovieDB.",
-						"description": "Фронтенд-додаток для перегляду популярних фільмів, пошуку за назвою та перегляду детальної інформації. Підтримує пагінацію, фільтрацію та адаптивний інтерфейс для різних розмірів екрана.",
-						"techStack": "React, TypeScript, TMDB API, Styled Components",
-						"link": "https://example.com/project-2"
+						"shortDescription": "Кіносайт з пошуком фільмів та деталями на базі MovieDB API.",
+						"description": [
+							"Фронтенд-додаток, який дозволяє переглядати популярні фільми, шукати за назвою та переглядати детальну інформацію.",
+							"Реалізовано пагінацію, адаптивність та інтеграцію з TMDB API."
+						],
+						"techStack": ["React", "TypeScript", "TMDB API", "Styled Components"],
+						"link": "https://example.com/project-2",
+						"github": "https://github.com/example/project-2"
 					},
+
 					{
 						"slug": "project-3",
 						"title": "Quiz / Game Dashboard",
-						"shortDescription": "Панель з інтерактивними квізами та статистикою для користувачів.",
-						"description": "Система з кількома ігровими режимами та модулем статистики. Дозволяє проходити квізи, переглядати результати та прогрес. Інтерфейс побудований з акцентом на швидкість та зрозумілу взаємодію.",
-						"techStack": "React, Next.js, TypeScript, Node.js",
-						"link": "https://example.com/project-3"
+						"shortDescription": "Панель з інтерактивними квізами, статистикою та прогресом.",
+						"description": [
+							"Застосунок містить кілька режимів гри, систему результатів та персональну статистику.",
+							"Особливу увагу приділено UX, швидкодії та простоті взаємодії."
+						],
+						"techStack": ["React", "Next.js", "TypeScript", "Node.js"],
+						"link": "https://example.com/project-3",
+						"github": "https://github.com/example/project-3"
 					}
 				],
+
 				"no_items": "Наразі немає проєктів"
 			}
 		},

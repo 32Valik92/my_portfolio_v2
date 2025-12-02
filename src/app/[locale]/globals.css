@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 :root {
     --main-first: #E85002;
@@ -21,5 +29,5 @@
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }

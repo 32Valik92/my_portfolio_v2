@@ -2,13 +2,13 @@ declare module "three/examples/jsm/loaders/STLLoader" {
 	import { BufferGeometry,Loader, LoadingManager } from "three";
 
 	export class STLLoader extends Loader {
-	  constructor(manager?: LoadingManager);
+	  constructor(_manager?: LoadingManager);
 	  load(
-			url: string,
-			onLoad: (geometry: BufferGeometry) => void,
-			onProgress?: (event: ProgressEvent) => void,
-			onError?: (event: ErrorEvent) => void
+			_url: string,
+			_onLoad: (_geometry: BufferGeometry) => void,
+			_onProgress?: (_event: ProgressEvent) => void,
+			_onError?: (_event: ErrorEvent) => void
 		): void;
-	  parse(data: ArrayBuffer): BufferGeometry;
+	  parse(_data: ArrayBuffer): BufferGeometry;
 	}
 }
