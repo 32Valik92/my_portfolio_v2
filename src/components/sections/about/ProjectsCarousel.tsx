@@ -1,8 +1,12 @@
 "use client";
 
+import "swiper/css";
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef } from "react";
+import type { Swiper as SwiperType } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import type { Project } from "@/types";
 
@@ -22,16 +26,32 @@ const ProjectsCarousel = ({
   const t = useTranslations("home.about.projects");
 
   const total = projects.length;
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const handleNext = () => {
     if (!total) return;
-    setActiveIndex((prev) => (prev + 1) % total);
+    swiperRef.current?.slideNext();
   };
 
   const handlePrev = () => {
     if (!total) return;
-    setActiveIndex((prev) => (prev - 1 + total) % total);
+    swiperRef.current?.slidePrev();
   };
+
+  const handleSelectProject = (project: Project, index: number) => {
+    setActiveIndex(index);
+    if (swiperRef.current) {
+      swiperRef.current.slideToLoop(index);
+    }
+    onProjectClick(project);
+  };
+
+  useEffect(() => {
+    if (!swiperRef.current) return;
+    if (swiperRef.current.realIndex !== activeIndex) {
+      swiperRef.current.slideToLoop(activeIndex);
+    }
+  }, [activeIndex]);
 
   if (!total) {
     return (
@@ -41,79 +61,46 @@ const ProjectsCarousel = ({
     );
   }
 
-  const visibleProjects: Project[] = [
-    projects[activeIndex],
-    projects[(activeIndex + 1) % total],
-    projects[(activeIndex + 2) % total],
-  ];
-
-  const activeProject = projects[activeIndex];
-
   return (
     <>
-      {/* Carousel */}
+      {/* Carousel (Swiper) */}
       <div className="w-full flex justify-center min-h-[345px]">
-        {/* Mobile only one card visible */}
-        <div className="flex sm:hidden flex-row items-start">
-          <div className="flex flex-col items-start gap-[5px]">
-            {/* Card */}
-            <div
-              onClick={() => onProjectClick(activeProject)}
-              className="group relative overflow-hidden rounded-[32px] bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)] w-[290px] h-[260px] flex-shrink-0 transition-all duration-300 scale-[1] filter-none opacity-[1] hover:scale-[1.02] hover:opacity-[1]"
-            >
-              <Image
-                src={activeProject.image}
-                alt={activeProject.title}
-                fill
-                className="object-cover"
-              />
-
-              <div className="absolute right-[20px] bottom-[20px] z-[20]">
-                <div className="w-[40px] h-[40px]">
-                  <Image
-                    src="/images/about/projects/go-project.svg"
-                    alt="open project"
-                    width={40}
-                    height={40}
-                    className="transition-all duration-300"
-                  />
-                </div>
-              </div>
-
-              {/* Description */}
-              <div
-                className="absolute w-full left-0 right-0 bottom-0 translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 bg-[rgba(0,0,0,0.85)] text-[var(--white)] px-[16px] py-[14px] text-left z-[4]"
-              >
-                <div className="text-[14px] leading-[20px] w-[85%]">
-                  {activeProject.shortDescription}
-                </div>
-              </div>
-            </div>
-
-            <div className="text-[16px] leading-[20px] font-semibold text-[var(--white)] pl-[15px]">
-              {activeProject.title}
-            </div>
-          </div>
-        </div>
-
-        {/* desktop */}
-        <div className="hidden sm:flex flex-row items-start gap-[24px]">
-          {visibleProjects.map((project, index) => {
-            const isActive = index === 0;
+        <Swiper
+          onSwiper={(swiperInstance) => {
+            swiperRef.current = swiperInstance;
+          }}
+          initialSlide={activeIndex}
+          loop={true}
+          onSlideChange={(swiperInstance) => {
+            setActiveIndex(swiperInstance.realIndex);
+          }}
+          slidesPerView={1}
+          spaceBetween={24}
+          centeredSlides
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              centeredSlides: true,
+            },
+          }}
+          className="w-full flex justify-center"
+        >
+          {projects.map((project, index) => {
+            const isActive = index === activeIndex;
 
             return (
-              <div
+              <SwiperSlide
                 key={project.slug}
-                className="flex flex-col items-start gap-[5px]"
+                className="group flex flex-col items-start gap-[5px] !w-auto"
               >
                 {/* Card */}
                 <div
-                  onClick={() => onProjectClick(project)}
-                  className={`cursor-pointer group relative overflow-hidden rounded-[32px] bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
+                  onClick={() => handleSelectProject(project, index)}
+                  className={`cursor-pointer relative overflow-hidden rounded-[32px] bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
                     ${
               isActive
-                ? "w-[520px] h-[320px]"
-                : "w-[260px] h-[260px]"
+                ? "w-[290px] h-[260px] sm:w-[520px] sm:h-[320px]"
+                : "w-[290px] h-[260px] sm:w-[260px] sm:h-[260px]"
               }
                     flex-shrink-0
                     transition-all duration-300
@@ -132,7 +119,11 @@ const ProjectsCarousel = ({
                     className="object-cover"
                   />
 
-                  <div className={`absolute right-[20px] bottom-[20px] ${isActive ? "z-[20]" : "z-0"}`}>
+                  <div
+                    className={`absolute right-[20px] bottom-[20px] ${
+                      isActive ? "z-[20]" : "z-0"
+                    }`}
+                  >
                     <div className="w-[40px] h-[40px]">
                       <Image
                         src="/images/about/projects/go-project.svg"
@@ -144,6 +135,7 @@ const ProjectsCarousel = ({
                     </div>
                   </div>
 
+                  {/* Description */}
                   <div className="absolute w-full left-0 right-0 bottom-0 translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 bg-[rgba(0,0,0,0.85)] text-[var(--white)] px-[16px] py-[14px] text-left z-[4]">
                     <div className="text-[14px] leading-[20px] w-[85%]">
                       {project.shortDescription}
@@ -151,16 +143,25 @@ const ProjectsCarousel = ({
                   </div>
                 </div>
 
-                <div className="text-[16px] leading-[20px] font-semibold text-[var(--white)] pl-[15px]">
+                {/* Title */}
+                <div
+                  className={`text-[16px] leading-[20px] font-semibold text-[var(--white)] text-center w-full transition-all duration-300
+                    ${
+              isActive
+                ? ""
+                : "blur-[2px] group-hover:blur-[0px]"
+              }
+                  `}
+                >
                   {project.title}
                 </div>
-              </div>
+              </SwiperSlide>
             );
           })}
-        </div>
+        </Swiper>
       </div>
 
-      {/* Pagination */}
+      {/* Pagination / controls */}
       <div className="flex flex-row items-center gap-[16px] mt-[8px]">
         {/* Prev */}
         <button
@@ -184,11 +185,11 @@ const ProjectsCarousel = ({
               <button
                 key={index}
                 type="button"
-                onClick={() => setActiveIndex(index)}
-                className={`h-[9px] w-[30px] rounded-[3px] border-[2px] border-[var(--white)] transition-all duration-200
+                onClick={() => swiperRef.current?.slideToLoop(index)}
+                className={`h-[9px] rounded-[3px] border-[2px] border-[var(--white)] transition-all duration-200
                   ${
               isActiveDot
-                ? "bg-[var(--white)]"
+                ? "w-[30px] bg-[var(--white)]"
                 : "w-[12px] bg-[var(--gray-1)]"
               }
                 `}

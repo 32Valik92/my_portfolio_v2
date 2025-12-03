@@ -35,3 +35,40 @@ body {
     color: var(--foreground);
     font-family: "Raleway", sans-serif;
 }
+
+.carousel-wrapper {
+    position: relative;
+    will-change: transform, opacity;
+}
+
+/* next → рух справа наліво */
+.carousel-slide-next {
+    animation: carousel-slide-next 0.4s ease-in-out;
+}
+
+/* prev → рух зліва направо */
+.carousel-slide-prev {
+    animation: carousel-slide-prev 0.4s ease-in-out;
+}
+
+@keyframes carousel-slide-next {
+    from {
+        transform: translateX(40px);
+        opacity: 0.3;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes carousel-slide-prev {
+    from {
+        transform: translateX(-40px);
+        opacity: 0.3;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
