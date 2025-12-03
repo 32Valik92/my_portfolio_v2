@@ -74,16 +74,16 @@ const ProjectsCarousel = ({
           onSlideChange={(swiperInstance) => {
             setActiveIndex(swiperInstance.realIndex);
           }}
-          slidesPerView={1}
+          slidesPerView={1}      // ✅ на мобілці завжди один слайд
           spaceBetween={24}
-          centeredSlides
+          // ❗ не центруємо для мобілки, щоб не показувало сусідів
           breakpoints={{
             640: {
               slidesPerView: 3,
-              centeredSlides: true,
+              centeredSlides: true, // ✅ тільки на планшет/десктоп
             },
           }}
-          className="w-full flex justify-center"
+          className="w-full"
         >
           {projects.map((project, index) => {
             const isActive = index === activeIndex;
@@ -91,12 +91,15 @@ const ProjectsCarousel = ({
             return (
               <SwiperSlide
                 key={project.slug}
-                className="group flex flex-col items-start gap-[5px] !w-auto"
+                // ⬇️ ВАЖЛИВО: без !w-auto, слайд займає 100% ширини в’юпорту
+                className="group flex flex-col items-center gap-[5px]"
               >
                 {/* Card */}
                 <div
                   onClick={() => handleSelectProject(project, index)}
-                  className={`cursor-pointer relative overflow-hidden rounded-[32px] bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
+                  className={`
+                    cursor-pointer relative overflow-hidden rounded-[32px]
+                    bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
                     ${
               isActive
                 ? "w-[290px] h-[260px] sm:w-[520px] sm:h-[320px]"
@@ -145,12 +148,11 @@ const ProjectsCarousel = ({
 
                 {/* Title */}
                 <div
-                  className={`text-[16px] leading-[20px] font-semibold text-[var(--white)] text-center w-full transition-all duration-300
-                    ${
-              isActive
-                ? ""
-                : "blur-[2px] group-hover:blur-[0px]"
-              }
+                  className={`
+                    text-[16px] leading-[20px] font-semibold text-[var(--white)]
+                    text-center w-full
+                    transition-all duration-300
+                    ${isActive ? "" : "blur-[2px] group-hover:blur-[0px]"}
                   `}
                 >
                   {project.title}
@@ -186,11 +188,13 @@ const ProjectsCarousel = ({
                 key={index}
                 type="button"
                 onClick={() => swiperRef.current?.slideToLoop(index)}
-                className={`h-[9px] rounded-[3px] border-[2px] border-[var(--white)] transition-all duration-200
+                className={`
+                  h-[9px] rounded-[3px] border-[1px] border-[var(--white)]
+                  transition-all duration-200
                   ${
               isActiveDot
                 ? "w-[30px] bg-[var(--white)]"
-                : "w-[12px] bg-[var(--gray-1)]"
+                : "w-[15px] bg-[var(--gray-1)]"
               }
                 `}
               />
