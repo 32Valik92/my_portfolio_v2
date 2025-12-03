@@ -20,7 +20,7 @@ const SkillsTab = () => {
     "mt-[6px] md:mt-[16px]",
     "mt-[2px] md:mt-[-8px]",
     "mt-[8px] md:mt-[20px]",
-    "mt-[0px] md:mt-[-12px]",
+    "mt-[0px] md:mt-[12px]",
   ];
 
   return (
@@ -30,12 +30,12 @@ const SkillsTab = () => {
         <h2
           className="text-[26px] sm:text-[32px] md:text-[42px] lg:text-[54px] font-semibold leading-[1.1] text-[var(--white)]"
         >
-          <span className="font-black mr-[8px]">{t("titleBold")}</span>
-          <span className="font-light">{t("titleRest")}</span>
+          <span className="font-bold mr-[8px]">{t("titleBold")}</span>
+          <span className="font-bold text-[var(--main-back)]">{t("titleRest")}</span>
         </h2>
 
         <p
-          className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[26px] md:leading-[30px] text-[var(--white)]"
+          className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[1] text-[var(--white)]"
         >
           {t("description")}
         </p>

@@ -64,8 +64,8 @@
         }
       },
       "skills": {
-        "titleBold": "Skills",
-        "titleRest": "and tools",
+        "titleBold": "My",
+        "titleRest": "Skillset",
         "description": "In my work, I use modern technologies, tools, and development approaches that help build efficient, fast, and scalable web applications. My stack includes both client-side and backend tools, as well as state management systems, databases, and UI utilities. This enables me to create solutions that combine clean code, well-designed architecture, and a smooth user experience.",
         "items": [
           "CSS",

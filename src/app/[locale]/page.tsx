@@ -25,7 +25,7 @@ export default function HomePage(){
       </Section>
 
       <Section id="lets-start-section">
-        <div className="w-full mt-[50px] md:px-[50px] relative">
+        <div className="w-full mt-[70px] md:px-[50px] relative">
           <Image
             src="/images/contact/contact_bg.webp"
             alt="contact_bg"

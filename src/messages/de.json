@@ -64,8 +64,8 @@
         }
       },
       "skills": {
-        "titleBold": "Skills",
-        "titleRest": "and tools",
+        "titleBold": "Meine",
+        "titleRest": "Fähigkeiten",
         "description": "In meiner Arbeit verwende ich moderne Technologien, Tools und Entwicklungsansätze, die dabei helfen, effiziente, schnelle und skalierbare Webanwendungen zu erstellen. Mein Stack umfasst sowohl den Client-Bereich als auch Backend-Tools, State-Management-Systeme, Datenbanken und UI-Werkzeuge. Dadurch entstehen Lösungen, die sauberen Code, durchdachte Architektur und ein angenehmes Nutzererlebnis vereinen.",
         "items": [
           "CSS",

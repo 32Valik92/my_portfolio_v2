@@ -12,7 +12,7 @@ const Section = ({ id, children, className }: SectionProps)=> {
       id={id}
       className={`w-full flex justify-center px-[16px] ${className}`}
     >
-      <div className="w-full max-w-[1400px]">
+      <div className="w-full max-w-[1250px]">
         {children}
       </div>
     </section>

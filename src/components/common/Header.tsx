@@ -91,11 +91,11 @@ const Header = () => {
   return (
     <header className="w-full flex justify-center bg-[var(--main-back)] h-auto md:h-[90px]">
       <div className="relative w-full max-w-[1400px] flex items-center justify-between px-[16px] py-[16px]">
-        <div className="flex flex-col leading-[23px]">
-          <span className="text-[28px] font-semibold text-[var(--white)] tracking-[1px]">
+        <div className="flex flex-col leading-[24px]">
+          <span className="text-[25px] font-semibold text-[var(--white)] tracking-[1px]">
             VALENTYN
           </span>
-          <span className="text-[28px] font-semibold text-[var(--white)] tracking-[1px]">
+          <span className="text-[25px] font-semibold text-[var(--white)] tracking-[1px]">
             STRUKALO
           </span>
         </div>
@@ -104,28 +104,28 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-[40px]">
           <div
             onClick={() => handleNavClick("home")}
-            className="text-[25px] text-[var(--white)] hover:opacity-70 cursor-pointer"
+            className="text-[22px] text-[var(--white)] hover:opacity-70 cursor-pointer"
           >
             {t("home")}
           </div>
 
           <div
             onClick={() => handleNavClick("about")}
-            className="text-[25px] text-[var(--white)] hover:opacity-70 cursor-pointer"
+            className="text-[22px] text-[var(--white)] hover:opacity-70 cursor-pointer"
           >
             {t("about")}
           </div>
 
           <div
             onClick={() => handleNavClick("skills")}
-            className="text-[25px] text-[var(--white)] hover:opacity-70 cursor-pointer"
+            className="text-[22px] text-[var(--white)] hover:opacity-70 cursor-pointer"
           >
             {t("skills")}
           </div>
 
           <div
             onClick={() => handleNavClick("projects")}
-            className="text-[25px] text-[var(--white)] hover:opacity-70 cursor-pointer"
+            className="text-[22px] text-[var(--white)] hover:opacity-70 cursor-pointer"
           >
             {t("projects")}
           </div>
@@ -208,7 +208,7 @@ const Header = () => {
 
           <Link
             href="#lets-start-section"
-            className="bg-[var(--main-first)] text-[var(--white)] font-bold text-[25px] px-[20px] py-[10px] rounded-[12px] hover:opacity-90"
+            className="bg-[var(--main-first)] text-[var(--white)] font-bold text-[22px] px-[20px] py-[10px] rounded-[12px] hover:opacity-90"
           >
             {t("contact")}
           </Link>

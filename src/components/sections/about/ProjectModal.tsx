@@ -1,35 +1,50 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import { Link } from "@/i18n/navigation";
 import type { Project } from "@/types";
 
 type Props = {
-	project: Project | null;
-	onClose: () => void;
-	techStackLabel: string;
+  project: Project | null;
+  onClose: () => void;
+  techStackLabel: string;
 };
 
 const ProjectModal = ({
-	                      project,
-	                      onClose,
-	                      techStackLabel,
+  project,
+  onClose,
+  techStackLabel,
 }: Props) => {
+  const [isLinkHovered, setIsLinkHovered] = useState(false);
+  const [isGithubHovered, setIsGithubHovered] = useState(false);
+
+  useEffect(() => {
+    if (!project) return;
+
+    if (typeof document === "undefined") return;
+    const originalOverflow = document.body.style.overflow;
+
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [project]);
+
   if (!project) return null;
 
   return (
     <div
-      className="fixed inset-0 z-[100] bg-[rgba(0,0,0,0.65)] backdrop-blur-[6px] overflow-y-auto flex sm:block md:flex md:items-center md:justify-center"
+      className="fixed inset-0 z-[100] bg-[rgba(0,0,0,0.65)] backdrop-blur-[6px] flex sm:block md:flex md:items-center md:justify-center"
       onClick={onClose}
     >
       <div
         className="w-full sm:mt-[20px] md:mt-0 md:mb-0 px-[12px] sm:px-[16px] md:w-auto md:max-w-[920px]"
         onClick={(e) => e.stopPropagation()}
       >
-        <div
-          className="bg-[var(--white)] text-[var(--black)] rounded-[22px] overflow-hidden animate-fadeIn shadow-[inset_1px_4px_5.3px_0px_#00000040] max-h-[92vh] overflow-y-auto"
-        >
+        <div className="bg-[var(--white)] text-[var(--black)] rounded-[22px] overflow-hidden animate-fadeIn shadow-[inset_1px_4px_5.3px_0px_#00000040] max-h-[92vh] overflow-y-auto">
           {/* HEADER */}
           <div className="flex justify-end p-[15px]">
             <Image
@@ -43,10 +58,8 @@ const ProjectModal = ({
           </div>
 
           {/* CONTENT */}
-          <div className="pt-[10px] px-[16px] pb-[30px] space-y-[35px]">
-
+          <div className="px-[16px] pb-[30px] space-y-[35px]">
             <div className="flex flex-col md:flex-row gap-[22px] p-[15px] shadow-[inset_1px_4px_5.3px_0px_#00000040] bg-[var(--gray-3)] rounded-[20px]">
-
               {/* IMAGE */}
               <div className="flex-1 rounded-[18px] overflow-hidden bg-[var(--gray-2)]">
                 <div className="relative w-full h-[240px] md:h-[100%] min-h-[260px]">
@@ -61,12 +74,9 @@ const ProjectModal = ({
 
               {/* RIGHT SIDE */}
               <div className="flex flex-col gap-[12px] w-full md:w-[50%] justify-around">
-
                 {/* TITLE + LINKS */}
                 <div className="flex flex-col gap-[10px]">
-                  <h2
-                    className="font-semibold text-[28px] leading-[1] md:text-[40px]"
-                  >
+                  <h2 className="font-semibold text-[28px] leading-[1] md:text-[40px]">
                     {project.title}
                   </h2>
 
@@ -77,10 +87,16 @@ const ProjectModal = ({
                         href={project.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] hover:scale-[1.05] transition-all duration-200"
+                        className="w-[40px] h-[40px] hover:scale-[1.05] transition-all duration-200"
+                        onMouseEnter={() => setIsLinkHovered(true)}
+                        onMouseLeave={() => setIsLinkHovered(false)}
                       >
                         <Image
-                          src="/images/about/projects/link.svg"
+                          src={
+                            isLinkHovered
+                              ? "/images/about/projects/link_hover.svg"
+                              : "/images/about/projects/link.svg"
+                          }
                           alt="link"
                           width={50}
                           height={50}
@@ -94,9 +110,15 @@ const ProjectModal = ({
                         target="_blank"
                         rel="noreferrer"
                         className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] hover:scale-[1.05] transition-all duration-200"
+                        onMouseEnter={() => setIsGithubHovered(true)}
+                        onMouseLeave={() => setIsGithubHovered(false)}
                       >
                         <Image
-                          src="/images/about/projects/git.svg"
+                          src={
+                            isGithubHovered
+                              ? "/images/about/projects/git_hover.svg"
+                              : "/images/about/projects/git.svg"
+                          }
                           alt="github"
                           width={50}
                           height={50}
@@ -137,7 +159,6 @@ const ProjectModal = ({
                 </p>
               ))}
             </div>
-
           </div>
         </div>
       </div>

@@ -64,8 +64,8 @@
 				}
 			},
 			"skills": {
-				"titleBold": "Umiejętności",
-				"titleRest": "i narzędzia",
+				"titleBold": "Mój",
+				"titleRest": "Zestaw umiejętności",
 				"description": "W swojej pracy wykorzystuję nowoczesne technologie, narzędzia i podejścia do tworzenia oprogramowania, które pozwalają budować wydajne, szybkie i skalowalne aplikacje webowe. Mój stos obejmuje zarówno część frontendową, jak i narzędzia backendowe, a także systemy zarządzania stanem, bazy danych oraz narzędzia do pracy z UI. Dzięki temu tworzę rozwiązania łączące czysty kod, przemyślaną architekturę i wygodne doświadczenie użytkownika.",
 				"items": [
 					"CSS",
