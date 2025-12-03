@@ -11,17 +11,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import type { Project } from "@/types";
 
 type Props = {
-  projects: Project[];
-  activeIndex: number;
-  setActiveIndex: Dispatch<SetStateAction<number>>;
-  onProjectClick: (_project: Project) => void;
+	projects: Project[];
+	activeIndex: number;
+	setActiveIndex: Dispatch<SetStateAction<number>>;
+	onProjectClick: (_project: Project) => void;
 };
 
 const ProjectsCarousel = ({
-  projects,
-  activeIndex,
-  setActiveIndex,
-  onProjectClick,
+	                          projects,
+	                          activeIndex,
+	                          setActiveIndex,
+	                          onProjectClick,
 }: Props) => {
   const t = useTranslations("home.about.projects");
 
@@ -74,13 +74,13 @@ const ProjectsCarousel = ({
           onSlideChange={(swiperInstance) => {
             setActiveIndex(swiperInstance.realIndex);
           }}
-          slidesPerView={1}      // ✅ на мобілці завжди один слайд
-          spaceBetween={24}
-          // ❗ не центруємо для мобілки, щоб не показувало сусідів
+          slidesPerView={1}
+          spaceBetween={0}
           breakpoints={{
             640: {
               slidesPerView: 3,
-              centeredSlides: true, // ✅ тільки на планшет/десктоп
+              centeredSlides: true,
+              spaceBetween: 24,
             },
           }}
           className="w-full"
@@ -91,8 +91,7 @@ const ProjectsCarousel = ({
             return (
               <SwiperSlide
                 key={project.slug}
-                // ⬇️ ВАЖЛИВО: без !w-auto, слайд займає 100% ширини в’юпорту
-                className="group flex flex-col items-center gap-[5px]"
+                className="group flex flex-col items-center gap-[5px] w-full md:!w-auto relative"
               >
                 {/* Card */}
                 <div
@@ -102,8 +101,8 @@ const ProjectsCarousel = ({
                     bg-[var(--gray-2)] border-[2px] border-[var(--gray-2)]
                     ${
               isActive
-                ? "w-[290px] h-[260px] sm:w-[520px] sm:h-[320px]"
-                : "w-[290px] h-[260px] sm:w-[260px] sm:h-[260px]"
+                ? "w-[100%] h-[260px] md:w-[520px] md:h-[320px]"
+                : "w-[100%] h-[260px] md:w-[260px] md:h-[260px]"
               }
                     flex-shrink-0
                     transition-all duration-300
@@ -139,7 +138,8 @@ const ProjectsCarousel = ({
                   </div>
 
                   {/* Description */}
-                  <div className="absolute w-full left-0 right-0 bottom-0 translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 bg-[rgba(0,0,0,0.85)] text-[var(--white)] px-[16px] py-[14px] text-left z-[4]">
+                  <div
+                    className="absolute w-full left-0 right-0 bottom-0 translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-300 bg-[rgba(0,0,0,0.85)] text-[var(--white)] px-[16px] py-[14px] text-left z-[4]">
                     <div className="text-[14px] leading-[20px] w-[85%]">
                       {project.shortDescription}
                     </div>
