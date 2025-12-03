@@ -22,7 +22,7 @@ const LetsStartSection = () => {
         <div className="md:order-1 flex flex-col justify-center items-center p-[6px]  bg-[var(--white)] text-[var(--main-back)] rounded-[42px] w-[300px] sm:w-[340px] md:w-[440px] overflow-hidden">
           <div className="relative w-full">
             <Image
-              src="/images/contact/contact_me.png"
+              src="/images/contact/contact_me.webp"
               alt={t("photoAlt")}
               width={439}
               height={439}

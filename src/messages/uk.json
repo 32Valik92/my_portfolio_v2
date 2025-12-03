@@ -50,7 +50,7 @@
       },
       "experience": {
         "title": "Останнє місце роботи",
-        "active": "лютий 2024 - березень 2025",
+        "active": "листопад 2024 - грудень 2025",
         "current": {
           "period": "Листопад 2024 – зараз",
           "position": "Frontend Developer",
@@ -66,7 +66,7 @@
       "skills": {
         "titleBold": "Skills",
         "titleRest": "and tools",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus non tincidunt semper. Nunc et luctus dolor.",
+        "description": "У своїй роботі я використовую сучасні технології, інструменти та підходи до розробки, які допомагають будувати ефективні, швидкі та масштабовані вебзастосунки. Мій стек охоплює як клієнтську частину, так і бекенд-інструменти, а також системи керування станом, бази даних та інструменти для роботи з UI. Завдяки цьому я створюю рішення, які поєднують якісний код, продуману архітектуру та зручний користувацький досвід.",
         "items": [
           "CSS",
           "React",
@@ -85,14 +85,12 @@
           "Next.js"
         ]
       },
-
       "projects": {
         "modal": {
           "techStackLabel": "Технології",
           "buttonLabel": "Перейти до проєкту",
           "closeLabel": "Закрити"
         },
-
         "items": [
           {
             "slug": "portfolio_valentyna",
@@ -121,7 +119,6 @@
             "link": "https://www.valentynaboichenko.com/",
             "github": ""
           },
-
           {
             "slug": "crm_for_json",
             "title": "JSON Архітектор",
@@ -155,7 +152,6 @@
             "link": "https://crm-project-jom.vercel.app/",
             "github": "https://github.com/32Valik92/crm_project_jom"
           },
-
           {
             "slug": "movie_website",
             "title": "Movie Web App",
@@ -177,7 +173,6 @@
             "link": "https://project-react-ts-coral.vercel.app/",
             "github": "https://github.com/32Valik92/project_react-ts"
           },
-
           {
             "slug": "superheroes_fullstack",
             "title": "Super Heroes Full-Stack App",
@@ -202,7 +197,6 @@
             "link": "",
             "github": "https://github.com/32Valik92/superheroes"
           },
-
           {
             "slug": "test_pxm_react_ts",
             "title": "React Shop — Тестове завдання",
@@ -227,8 +221,6 @@
             "link": "https://test-pxm-react-ts.vercel.app/",
             "github": "https://vercel.com/32valik92s-projects/test-pxm-react-ts/"
           },
-
-
           {
             "slug": "words_api_form",
             "title": "Words API Form",
@@ -252,13 +244,10 @@
             "link": "https://dictionary-form-search.vercel.app/",
             "github": "https://github.com/32Valik92/dictionary_form_search"
           }
-
         ],
-
         "no_items": "Наразі немає проєктів"
       }
     },
-
     "start": {
       "titleLine1": "LET'S",
       "titleLine2": "START",

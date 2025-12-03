@@ -1,13 +1,13 @@
 {
 	"header": {
-		"home": "Головна",
-		"about": "Про мене",
-		"skills": "Навички",
-		"projects": "Проекти",
-		"contact": "Зв’язатись",
+		"home": "Strona główna",
+		"about": "O mnie",
+		"skills": "Umiejętności",
+		"projects": "Projekty",
+		"contact": "Kontakt",
 		"languages": {
-			"label": "Мова інтерфейсу",
-			"uk": "Українська",
+			"label": "Język interfejsu",
+			"uk": "Ukraiński",
 			"en": "English",
 			"de": "Deutsch",
 			"pl": "Polski"
@@ -15,58 +15,58 @@
 	},
 	"home": {
 		"hero": {
-			"photoAlt": "Валентин Струкало — фронтенд розробник",
-			"tagName": "#ВАЛЕНТИН_СТРУКАЛО",
-			"tagRole": "#FRONTEND_РОЗРОБНИК"
+			"photoAlt": "Valentyn Strukalo — frontend developer",
+			"tagName": "#VALENTYN_STRUKALO",
+			"tagRole": "#FRONTEND_DEVELOPER"
 		},
 		"about": {
 			"tabs": {
-				"about": "Про мене",
-				"skills": "Навички",
-				"projects": "Проекти"
+				"about": "O mnie",
+				"skills": "Umiejętności",
+				"projects": "Projekty"
 			},
-			"leftColumnTitle": "Фронтенд-розробник з досвідом понад 2 роки",
+			"leftColumnTitle": "Frontend developer z ponad 2-letnim doświadczeniem",
 			"leftColumnDescription": [
-				"Я — фронтенд-розробник з більш ніж 2 роками комерційного досвіду. Спеціалізуюсь на створенні сучасних, продуктивних та SEO-оптимізованих інтерфейсів з підтримкою багатомовності.",
-				"Мені подобається розв’язувати нетипові задачі, де можна застосувати логіку, математику та критичне мислення. Працюю з технологіями React.js, Next.js, TypeScript, MongoDB, MySQL, Git та іншими.",
-				"Прагну створювати масштабовані рішення, які легко підтримувати та перевикористовувати в майбутньому. Взаємодію з командою, беру участь у проєктуванні архітектури та оптимізації процесів розробки."
+				"Jestem frontend developerem z ponad 2-letnim doświadczeniem komercyjnym. Specjalizuję się w tworzeniu nowoczesnych, wydajnych i SEO-optymalizowanych interfejsów z obsługą wielu języków.",
+				"Lubię rozwiązywać niestandardowe zadania, w których można zastosować logikę, matematykę i myślenie krytyczne. Pracuję z technologiami takimi jak React.js, Next.js, TypeScript, MongoDB, MySQL, Git i innymi.",
+				"Dążę do tworzenia skalowalnych rozwiązań, które są łatwe w utrzymaniu i ponownym wykorzystaniu w przyszłości. Współpracuję z zespołem, biorę udział w projektowaniu architektury i optymalizacji procesów programistycznych."
 			],
 			"education": {
-				"title": "Освіта",
+				"title": "Wykształcenie",
 				"items": [
 					{
 						"period": "2020 – 2024",
-						"degree": "Бакалавр",
-						"institution": "Національний технічний університет України «КПІ ім. Ігоря Сікорського»",
-						"specialization": "Кібербезпека"
+						"degree": "Licencjat",
+						"institution": "National Technical University of Ukraine «Igor Sikorsky Kyiv Polytechnic Institute»",
+						"specialization": "Cyberbezpieczeństwo"
 					},
 					{
 						"period": "2024 – 2026",
-						"degree": "Магістр",
-						"institution": "Херсонський державний університет",
-						"specialization": "Інженерія програмного забезпечення"
+						"degree": "Magister",
+						"institution": "Kherson State University",
+						"specialization": "Inżynieria oprogramowania"
 					}
 				]
 			},
 			"experience": {
-				"title": "Останнє місце роботи",
-				"active": "лютий 2024 - березень 2025",
+				"title": "Ostatnie miejsce pracy",
+				"active": "Listopad 2024 – Grudzień 2025",
 				"current": {
-					"period": "Листопад 2024 – зараз",
+					"period": "Listopad 2024 – obecnie",
 					"position": "Frontend Developer",
 					"type": "Full-time",
 					"company": "Pixoram",
 					"description": [
-						"Працюю Frontend Developer у продуктовій компанії, де створюю багатомовні, SEO-оптимізовані вебсайти на базі Next.js, TypeScript, React.js і Vite.",
-						"Тісно співпрацюю з командою, відповідаю за контроль версій та забезпечення стабільності процесів розробки.",
-						"Беру участь у створенні проєктів із використанням різних мікросервісів, а також розробляю брендовані сайти для партнерських компаній на запит."
+						"Pracuję jako Frontend Developer w firmie produktowej, gdzie tworzę wielojęzyczne, SEO-optymalizowane strony internetowe oparte na Next.js, TypeScript, React.js i Vite.",
+						"Ściśle współpracuję z zespołem, odpowiadam za kontrolę wersji i zapewnienie stabilności procesów programistycznych.",
+						"Biorę udział w tworzeniu projektów z wykorzystaniem różnych mikroserwisów oraz tworzę brandowe strony na potrzeby firm partnerskich."
 					]
 				}
 			},
 			"skills": {
-				"titleBold": "Skills",
-				"titleRest": "and tools",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus non tincidunt semper. Nunc et luctus dolor.",
+				"titleBold": "Umiejętności",
+				"titleRest": "i narzędzia",
+				"description": "W swojej pracy wykorzystuję nowoczesne technologie, narzędzia i podejścia do tworzenia oprogramowania, które pozwalają budować wydajne, szybkie i skalowalne aplikacje webowe. Mój stos obejmuje zarówno część frontendową, jak i narzędzia backendowe, a także systemy zarządzania stanem, bazy danych oraz narzędzia do pracy z UI. Dzięki temu tworzę rozwiązania łączące czysty kod, przemyślaną architekturę i wygodne doświadczenie użytkownika.",
 				"items": [
 					"CSS",
 					"React",
@@ -85,22 +85,20 @@
 					"Next.js"
 				]
 			},
-
 			"projects": {
 				"modal": {
-					"techStackLabel": "Технології",
-					"buttonLabel": "Перейти до проєкту",
-					"closeLabel": "Закрити"
+					"techStackLabel": "Technologie",
+					"buttonLabel": "Przejdź do projektu",
+					"closeLabel": "Zamknij"
 				},
-
 				"items": [
 					{
 						"slug": "portfolio_valentyna",
-						"title": "Портфоліо",
-						"shortDescription": "Багатомовне портфоліо фотографа з галереями, адмінпанеллю та формою замовлення фотосесії.",
+						"title": "Portfolio",
+						"shortDescription": "Wielojęzyczne portfolio fotografa z galeriami, panelem administracyjnym i formularzem do zamawiania sesji zdjęciowych.",
 						"description": [
-							"Фотопортфоліо з багатомовною підтримкою, контактною формою та можливістю замовлення фотосесії. На сайті представлена галерея з категоріями фотозйомок, які замовник може редагувати через адмінпанель Sanity — додавати фото, змінювати описи та керувати контентом.",
-							"Проєкт підтримує кілька мов завдяки next-intl та next-i18next, а також інтегрує механізм відгуків Google Business Profile. Зв’язок із фотографом реалізовано через контактну форму з надсиланням листів через Graph Microsoft API."
+							"Portfolio fotograficzne z obsługą wielu języków, formularzem kontaktowym oraz możliwością zamówienia sesji zdjęciowej. Na stronie znajduje się galeria z kategoriami sesji, którymi klient może zarządzać poprzez panel administracyjny Sanity — dodawać zdjęcia, zmieniać opisy i aktualizować treści.",
+							"Projekt obsługuje wiele języków dzięki next-intl i next-i18next oraz integruje opinie Google Business Profile. Kontakt z fotografem realizowany jest poprzez formularz, który wysyła wiadomości przez Microsoft Graph API."
 						],
 						"techStack": [
 							"Next.js",
@@ -121,16 +119,15 @@
 						"link": "https://www.valentynaboichenko.com/",
 						"github": ""
 					},
-
 					{
 						"slug": "crm_for_json",
-						"title": "JSON Архітектор",
-						"shortDescription": "Інструмент для конструювання структури даних та генерації JSON-архіву під конкретну архітектуру проєкту.",
+						"title": "JSON Architekt",
+						"shortDescription": "Narzędzie do tworzenia struktur danych i generowania archiwów JSON dla określonych architektur projektowych.",
 						"description": [
-							"Пет-проєкт, у якому можна поетапно налаштувати структуру для різних компонентів системи: кожен блок конфігурується окремо, а на виході формується готовий JSON, який можна використати в архітектурі замовника.",
-							"Після заповнення полів застосунок збирає всі дані та генерує архів з необхідними файлами, що спрощує інтеграцію у реальний проєкт і пришвидшує початкову розробку.",
-							"Упор зроблено на зручність роботи з формами та якісну валідацію: react-hook-form використовується для керування формами, а Zod відповідає за схему та перевірку даних. Стан застосунку керується через Zustand, а завантаження архіву реалізовано за допомогою JSZip та File Saver.",
-							"Інтерфейс побудований на Next.js з використанням TailwindCSS, з анімованими переходами через Framer Motion, і компоненти оформлені з допомогою Headless UI та іконок Lucide React."
+							"Pet-project, w którym można krok po kroku konfigurować strukturę dla różnych komponentów systemu: każdy blok uzupełnia się osobno, a na końcu generowany jest gotowy plik JSON, który można wykorzystać w architekturze klienta.",
+							"Po wypełnieniu pól aplikacja zbiera dane i generuje archiwum z potrzebnymi plikami, co ułatwia integrację z rzeczywistym projektem i przyspiesza początkową fazę programowania.",
+							"Nacisk położono na wygodną pracę z formularzami i solidną walidację: React Hook Form zarządza logiką formularzy, a Zod odpowiada za schematy i walidację danych. Stan aplikacji kontrolowany jest przez Zustand, a generowanie archiwum zapewniają JSZip oraz File Saver.",
+							"Interfejs zbudowano w oparciu o Next.js z TailwindCSS, z animowanymi przejściami w Framer Motion. Komponenty wykorzystują Headless UI oraz ikony Lucide React."
 						],
 						"techStack": [
 							"Next.js",
@@ -155,14 +152,13 @@
 						"link": "https://crm-project-jom.vercel.app/",
 						"github": "https://github.com/32Valik92/crm_project_jom"
 					},
-
 					{
 						"slug": "movie_website",
 						"title": "Movie Web App",
-						"shortDescription": "Кіносайт із пошуком, фільтрацією та детальними сторінками на базі TMDb API.",
+						"shortDescription": "Strona filmowa z wyszukiwaniem, filtrowaniem i stronami szczegółowymi na podstawie TMDb API.",
 						"description": [
-							"Сучасний веб-додаток для перегляду популярних фільмів, пошуку за ключовими словами та фільтрації за жанрами. Інтерфейс містить рейтинги, описи, постери та інші дані про кожен фільм.",
-							"Реалізовано темну та світлу тему, пагінацію, адаптивність і оновлення контенту через TMDb API. Застосунок оптимізований завдяки Redux Toolkit та строгій типізації TypeScript."
+							"Nowoczesna aplikacja internetowa do przeglądania popularnych filmów, wyszukiwania słów kluczowych i filtrowania według gatunków. Interfejs zawiera oceny, opisy, plakaty i inne informacje.",
+							"Wdrożono tryb jasny/ciemny, paginację, responsywność oraz aktualizację treści przez TMDb API. Aplikacja została zoptymalizowana dzięki Redux Toolkit i ścisłej typizacji TypeScript."
 						],
 						"techStack": [
 							"HTML",
@@ -177,15 +173,14 @@
 						"link": "https://project-react-ts-coral.vercel.app/",
 						"github": "https://github.com/32Valik92/project_react-ts"
 					},
-
 					{
 						"slug": "superheroes_fullstack",
 						"title": "Super Heroes Full-Stack App",
-						"shortDescription": "CRUD-система для управління супергероями з власним бекендом та базою даних.",
+						"shortDescription": "System CRUD do zarządzania superbohaterami z własnym backendem i bazą danych.",
 						"description": [
-							"Повноцінний фронтенд + бекенд застосунок, у якому можна додавати, редагувати, видаляти та переглядати картки супергероїв. Реалізований зручний інтерфейс із формою для введення даних, завантаженням зображень та пагінацією.",
-							"Бекенд побудований на Node.js та Express, зберігання даних — у MongoDB. На фронтенді використано Redux Toolkit для керування станом та TypeScript для безпечної типізації.",
-							"Проєкт створений як навчальний CRUD-функціонал із повним циклом — від UI до бази даних."
+							"Pełnoprawna aplikacja frontend + backend, w której można dodawać, edytować, usuwać i przeglądać karty superbohaterów. Zawiera wygodny interfejs z formularzem, przesyłaniem obrazów i paginacją.",
+							"Backend zbudowany został na Node.js i Express, a do przechowywania danych użyto MongoDB. Frontend korzysta z Redux Toolkit do zarządzania stanem oraz TypeScript do bezpiecznej typizacji.",
+							"Projekt stworzono jako edukacyjny system CRUD obejmujący pełny cykl — od UI do bazy danych."
 						],
 						"techStack": [
 							"HTML",
@@ -202,17 +197,16 @@
 						"link": "",
 						"github": "https://github.com/32Valik92/superheroes"
 					},
-
 					{
 						"slug": "test_pxm_react_ts",
-						"title": "React Shop — Тестове завдання",
-						"shortDescription": "Каталог товарів з категоріями, кошиком і пагінацією, створений як тестове завдання.",
+						"title": "React Shop — Zadanie testowe",
+						"shortDescription": "Katalog produktów z kategoriami, koszykiem i paginacją, wykonany jako zadanie testowe.",
 						"description": [
-							"Цей проєкт був виконаний як тестове завдання для компанії. Мета — створити інтернет-магазин з категоріями товарів, базовим кошиком, пагінацією та адаптивним інтерфейсом.",
-							"Застосунок побудований на Next.js із серверним рендерингом і оптимізацією зображень. Категорії, товари та окрема сторінка продукту реалізовані з повною підтримкою фільтрації та пагінації.",
-							"Для управління станом використано Redux Toolkit, що дозволило структурувати логіку кошика, синхронізацію кількості, збереження у локальному сховищі та спрощене керування даними.",
-							"Інтерфейс побудований на HTML, CSS та Tailwind-стилізації, із чистою компонетною структурою та розбиттям UI-елементів на повторно використовувані блоки.",
-							"Також реалізовано практики чистого коду, статичний аналіз ESLint та TypeScript-типізацію для запобігання помилкам."
+							"Ten projekt został wykonany jako zadanie rekrutacyjne dla firmy. Celem było stworzenie sklepu internetowego z kategoriami produktów, podstawowym koszykiem, paginacją oraz responsywnym interfejsem.",
+							"Aplikacja została zbudowana na Next.js z użyciem renderowania po stronie serwera oraz optymalizacją obrazów. Kategorie, produkty i osobna strona produktu obsługują pełną filtrację i paginację.",
+							"Zarządzanie stanem zrealizowano za pomocą Redux Toolkit, co ułatwiło organizację logiki koszyka, synchronizację ilości, obsługę localStorage oraz ogólne zarządzanie danymi.",
+							"Interfejs oparto na HTML, CSS i stylach Tailwind, z czystą strukturą komponentów i podziałem na elementy wielokrotnego użytku.",
+							"Zastosowano również praktyki czystego kodu, statyczną analizę za pomocą ESLint oraz typizację TypeScript dla uniknięcia błędów."
 						],
 						"techStack": [
 							"HTML",
@@ -227,17 +221,15 @@
 						"link": "https://test-pxm-react-ts.vercel.app/",
 						"github": "https://vercel.com/32valik92s-projects/test-pxm-react-ts/"
 					},
-
-
 					{
 						"slug": "words_api_form",
 						"title": "Words API Form",
-						"shortDescription": "Форма для роботи з WordsAPI: пошук значень, антонімів, синонімів та іншої мовної інформації.",
+						"shortDescription": "Formularz do pracy z WordsAPI: wyszukiwanie znaczeń, antonimów, synonimów i innych danych językowych.",
 						"description": [
-							"Односторінковий застосунок на Next.js, який дозволяє шукати слова та отримувати інформацію з WordsAPI у різних режимах: синоніми, антоніми, визначення, приклади та інше.",
-							"Проєкт містить динамічну форму, що працює через API routes Next.js, а також використовує TypeScript для забезпечення безпечної типізації.",
-							"Реалізовано валідацію введення, обробку помилок, адаптивний інтерфейс та структурований результат пошуку.",
-							"Також використаний ESLint для контролю якості коду та дотримання стандартів під час розробки."
+							"Jednostronicowa aplikacja oparta na Next.js, która umożliwia wyszukiwanie słów i pobieranie informacji z WordsAPI w różnych trybach: synonimy, antonimy, definicje, przykłady i inne.",
+							"Projekt zawiera dynamiczny formularz wykorzystujący Next.js API routes, a TypeScript zapewnia bezpieczną typizację.",
+							"Wdrożono walidację danych wejściowych, obsługę błędów, responsywny interfejs i strukturyzowany wynik wyszukiwania.",
+							"Zastosowano również ESLint do kontroli jakości kodu i przestrzegania standardów podczas pracy."
 						],
 						"techStack": [
 							"HTML",
@@ -252,18 +244,15 @@
 						"link": "https://dictionary-form-search.vercel.app/",
 						"github": "https://github.com/32Valik92/dictionary_form_search"
 					}
-
 				],
-
-				"no_items": "Наразі немає проєктів"
+				"no_items": "Aktualnie brak projektów"
 			}
 		},
-
 		"start": {
 			"titleLine1": "LET'S",
 			"titleLine2": "START",
-			"photoAlt": "Валентин Струкало — фото для контакту",
-			"name": "Валентин Струкало",
+			"photoAlt": "Valentyn Strukalo — zdjęcie kontaktowe",
+			"name": "Valentyn Strukalo",
 			"linkedin": {
 				"label": "valentyn_strukalo",
 				"url": "http://www.linkedin.com/in/valentyn-strukalo-07b747286"

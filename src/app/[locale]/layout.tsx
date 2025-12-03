@@ -1,11 +1,19 @@
 import "./globals.css";
 
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 
 import Header from "@/components/common/Header";
+
+export const metadata: Metadata = {
+  title: "Strukalo Valentyn",
+  icons: {
+    icon: "/favicon.svg",
+  },
+};
 
 type Props = {
 	children?: ReactNode;

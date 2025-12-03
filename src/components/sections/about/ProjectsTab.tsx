@@ -9,13 +9,12 @@ import ProjectModal from "./ProjectModal";
 import ProjectsCarousel from "./ProjectsCarousel";
 
 const projectCardImages: Record<string, string> = {
-  "portfolio_valentyna": "/images/projects/portfolio_valentyna.png",
-  "crm_for_json": "/images/projects/crm_for_json.png",
-  "movie_website": "/images/projects/movie_website.png",
-  "superheroes_fullstack": "/images/projects/superheroes_fullstack.png",
-  "words_api_form": "/images/projects/words_api_form.png",
-  "test_pxm_react_ts": "/images/projects/test_pxm_react_ts.png",
-  "project-3": "/images/projects/project-3.png",
+  "portfolio_valentyna": "/images/projects/portfolio_valentyna.webp",
+  "crm_for_json": "/images/projects/crm_for_json.webp",
+  "movie_website": "/images/projects/movie_website.webp",
+  "superheroes_fullstack": "/images/projects/superheroes_fullstack.webp",
+  "words_api_form": "/images/projects/words_api_form.webp",
+  "test_pxm_react_ts": "/images/projects/test_pxm_react_ts.webp",
 };
 
 const ProjectsTab = () => {
@@ -30,7 +29,7 @@ const ProjectsTab = () => {
 
     return items.map((item) => ({
       ...item,
-      image: projectCardImages[item.slug] || "/images/about/projects/placeholder.png",
+      image: projectCardImages[item.slug] || "/images/about/projects/placeholder.webp",
     }))
       .filter((item) => !!item.image);
   }, [t]);

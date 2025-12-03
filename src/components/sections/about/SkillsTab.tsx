@@ -24,7 +24,7 @@ const SkillsTab = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-[32px] md:gap-[60px] lg:gap-[120px] items-start">
+    <div className="w-full flex flex-col lg:flex-row gap-[32px] items-start">
       {/* left part and header */}
       <div className="flex-1 flex flex-col gap-[16px] md:gap-[24px]">
         <h2
@@ -35,7 +35,7 @@ const SkillsTab = () => {
         </h2>
 
         <p
-          className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[26px] md:leading-[30px] text-[var(--white)] max-w-[520px]"
+          className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-[24px] sm:leading-[26px] md:leading-[30px] text-[var(--white)]"
         >
           {t("description")}
         </p>

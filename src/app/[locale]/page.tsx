@@ -9,7 +9,7 @@ export default function HomePage(){
   return (
     <div className="relative w-full">
       <Image
-        src="/images/hero/hero_bg.png"
+        src="/images/hero/hero_bg.webp"
         alt="hero left"
         height={1286}
         width={475}
@@ -27,7 +27,7 @@ export default function HomePage(){
       <Section id="lets-start-section">
         <div className="w-full mt-[50px] md:px-[50px] relative">
           <Image
-            src="/images/contact/contact_bg.png"
+            src="/images/contact/contact_bg.webp"
             alt="contact_bg"
             width={1866}
             height={954}
